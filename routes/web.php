@@ -12,5 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+
+Route::get('books', 
+    [
+        'as' => 'books',
+        'uses' => 'BookController@listBooks'
+    ]);
