@@ -15,8 +15,15 @@ Route::get('/', function () {
     return view('home');
 });
 
+/*
 Route::get('books', 
     [
         'as' => 'books',
-        'uses' => 'BookController@listBooks'
+        'uses' => 'BookController@index'
     ]);
+*/
+Route::get('books', 'BookController@index')->name('books');
+
+Route::get('authors', 'AuthorController@index')->name('authors');
+Route::get('authors/create', 'AuthorController@create')->name('authors.create');
+Route::post('authors/store', 'AuthorController@store')->name('authors.store');
