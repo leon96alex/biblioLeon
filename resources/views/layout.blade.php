@@ -8,9 +8,11 @@
     <title>BiblioLeon</title>
 </head>
 <body>
-    <h1>BiblioLeon</h1>
-    <hr>
-    @yield('content')
+    <div class="container-fluid">
+        <h1>BiblioLeon</h1>
+        <hr>
+        @yield('content')
+    </div>
 </body>
 
 </html>
