@@ -9,11 +9,12 @@ class Book extends Model
 
     public function author()
     {
-        return $this->belongsTo('App\Author', 'author_id');
+        return $this->belongsTo('App\Author');
     }
 
     public function editorial()
     {
-        return $this->belongsTo('App\Editorial', 'editorial_id');
+        return $this->belongsTo('App\Editorial');
     }
+
 }

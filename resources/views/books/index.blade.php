@@ -1,13 +1,13 @@
 @extends('layout')
 @section('content')
-    <h1>Llibres{{ $author_name ?? '' }}</h1>
+    <h1>Llibres{{ $author_name ?? '' ?? 'oferta' }}</h1>
     <table class="table">
         <thead>
             <tr>
                 <th>Nom</th>
                 <th>Autor</th>
                 <th>Editorial</th>
-                <th>Preu</th>
+                <th>Preu*</th>
                 <th>Unitats</th>
             </tr>
             
@@ -25,4 +25,5 @@
         </tbody>
     </table>
     <a href="{{route('books.create')}}">+ Afegir llibre</a>
+    <p class="mini">* Els preus mostrats són sense aplicar l'IVA del 21%.</p>
 @stop

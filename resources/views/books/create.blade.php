@@ -1,7 +1,7 @@
 @extends('layout')
 @section('content')
 
-<h1>Afegir autor</h1>
+<h1>Afegir Llibre</h1>
 <form method="POST" action="{{ route('books.store') }}">
     {!! csrf_field() !!}
     <div class="form-group">
